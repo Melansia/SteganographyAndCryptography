@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f72e2baa-542b-4c4f-a178-21a044f2ac86" name="Changes" comment="workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/test/out.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SteganographyAndCryptography.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SteganographyAndCryptography.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,11 @@
     "last_opened_file_path": "C:/Users/mmold/IdeaProjects/SteganographyAndCryptography/src/test"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mmold\IdeaProjects\SteganographyAndCryptography\src\test" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
@@ -126,7 +130,35 @@
       <option name="project" value="LOCAL" />
       <updated>1654448483368</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test img">
+      <created>1654448880105</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654448880105</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Main.kt">
+      <created>1654449023583</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654449023583</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SteganographyAndCryptography.kt">
+      <created>1654449037853</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654449037853</updated>
+    </task>
+    <task id="LOCAL-00011" summary="workspace.xml">
+      <created>1654449054071</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654449054071</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +176,9 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="update" />
     <MESSAGE value="README.md" />
+    <MESSAGE value="test img" />
+    <MESSAGE value="Main.kt" />
+    <MESSAGE value="SteganographyAndCryptography.kt" />
     <MESSAGE value="workspace.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
