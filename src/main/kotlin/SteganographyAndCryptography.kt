@@ -8,7 +8,8 @@ class SteganographyAndCryptography {
 
     private lateinit var image: BufferedImage
     private lateinit var encoded: List<Int>
-    private val kEY_BYTES_TO_STOP = "000000000000000000000011"
+    private val keyBytesToStop = "000000000000000000000011"
+    private val marker = "\u0000\u0000\u0003"
     fun start() {
         while (true) {
             println("Task (hide, show, exit):")
@@ -71,7 +72,8 @@ class SteganographyAndCryptography {
         val encoding = mutableListOf<String>()
         println("Message to hide:")
         val message = readln()
-        val markerToMessage = "$message$kEY_BYTES_TO_STOP"
+        val markerToMessage = "$message$marker"
+
         markerToMessage.toByteArray().forEach { encoding += it.toString(2).padStart(8, '0') }
         encoded = encoding.joinToString("").map { it.digitToInt() }
     }
@@ -88,10 +90,11 @@ class SteganographyAndCryptography {
                 messageAllBits += (pixelColor.blue).toString(2).takeLast(1).toInt()
             }
         }
-        messageAllBits.joinToString("").split(kEY_BYTES_TO_STOP).first().chunked(8).forEach { print(it.toInt(2).toChar()) }
+        messageAllBits.joinToString("").split(keyBytesToStop).first().chunked(8).forEach { print(it.toInt(2).toChar()) }
         println()
     }
     private fun saveImage(image: BufferedImage, imageFile: String) {
         ImageIO.write(image, "png", File(imageFile))
     }
 }
+
