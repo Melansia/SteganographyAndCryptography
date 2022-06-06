@@ -23,7 +23,7 @@ The following **required** Objectives are completed:
 
 ### Stage 2
 
-* [X] When the user inputs the command hide, the program prompt them for an input image filename with the message Input image file: 
+* [X] When the user inputs the command hide, the program prompt them for an input image filename with the message "Input image file:" 
 and an output image filename with the message "Output image file:". 
 These are used for reading the input image file and writing the output image file, respectively.
 
@@ -54,7 +54,8 @@ and return to the menu.
 The output image is saved in the PNG format.
 
 
-* [X] When the "show" command is given, the program asks for the image filename (previously saved with the hidden message) by printing "Input image file:". 
+* [X] When the "show" command is given, the program asks for the image filename 
+(previously saved with the hidden message) by printing "Input image file:". 
 The image is opened and the Bytes Array is reconstructed bit by bit; 
 the program stops reading it when the bytes with the values 0, 0, 3 are encountered.
 
@@ -62,3 +63,29 @@ the program stops reading it when the bytes with the values 0, 0, 3 are encounte
 * [X] The last 3 bytes (values 0, 0, 3) are removed from the end of the Bytes Array.
 Then, the message is restored as a String from the Bytes Array (or 00000000 00000000 00000011 bits).
 The program then prints "Message:" and then the message itself on a new line.
+
+### Stage 4
+
+* [X] When the hide command is given and the secret message is input, 
+the user is prompted for a password with the message "Password:".
+
+
+* [X] The program reads the password string and converts it to a Bytes Array. 
+The first message byte will be XOR encrypted using the first password byte, 
+the second message byte will be XOR encrypted with the second password byte, and so on. 
+If the password is shorter than the message, then after the last byte of the password, 
+the first byte of the password is used again.
+
+
+* [X] Three Bytes with values 0, 0, 3 are added to the encrypted Bytes Array. 
+If the image size is adequate for holding the Bytes array, the result is hidden in the image like in the previous stage.
+
+
+* [X] When the show command is given and the filename is input, 
+the user is prompted for the password with the message "Password:". 
+The image is open and the encrypted Bytes Array are reconstructed ,
+the program stops reading it when the bytes with the values 0, 0, 3 are found. 
+The last three bytes are removed and the encrypted Bytes Array are decrypted using the password.
+
+
+* [X] Finally, the message is restored to the String type, and the program prints "Message:" and then the message itself on a new line.
